@@ -9,5 +9,6 @@
   <div>
     <p><%= message.content %></p>
     <p>— <%= message.author %></p>
+    <%= link_to "Editar", edit_message_path(message) %>
   </div>
 <% end %>

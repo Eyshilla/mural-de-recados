@@ -12,6 +12,10 @@ class MessagesController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @message = Message.find (params[:id])
+  end
+
   private
 
   def message_params
